@@ -1,0 +1,17 @@
+Rscript ${ichorCNA_DIR}/scripts/runIchorCNA.R  \
+--id ${tumor} \
+--WIG ${tumor}.500k.wig \
+--ploidy "c(2)" \
+ --maxCN 4 \
+ --gcWig ${ichorCNA_DIR}/inst/extdata/gc_hg38_500kb.wig \
+ --mapWig ${ichorCNA_DIR}/inst/extdata/map_hg38_500kb.wig \
+ --centromere ${ichorCNA_DIR}/inst/extdata/GRCh38.GCA_000001405.2_centromere_acen.txt \
+ --includeHOMD False \
+ --estimateNormal True \
+ --estimatePloidy True \
+ --genomeBuild hg38 \
+ --chrs "c(1:22)" \
+ --genomeStyle UCSC \
+ --estimateScPrevalence True \
+ --outDir ${tumor} \
+ --plotYLim "c(-4,4)" 
