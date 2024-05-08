@@ -6,7 +6,7 @@ p_s1 <-
                    alpha = 0.8, side = 'top')+  
   geom_half_point(range_scale = 0.5,shape=8,
                   side  = "l",alpha = 0.6, size  = 2) + 
-  scale_fill_manual(values = c('Other fSCNA'='#619CFF','ecDNA'='#d33839')) +  # 设置填充颜色
+  scale_fill_manual(values = c('Other fSCNA'='#619CFF','ecDNA'='#d33839')) +  
   scale_color_manual(values = c('Other fSCNA'='#619CFF','ecDNA'='#d33839'))+
   scale_y_sqrt() +  
   facet_grid(~Index,scales = 'free')+
