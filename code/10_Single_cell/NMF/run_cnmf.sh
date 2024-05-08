@@ -1,4 +1,4 @@
-cat ~/PROJECT/NMF/samples|while read i
+cat ~/PROJECT/NMF/samples | while read i
 do
 echo "#!/bin/bash
 
