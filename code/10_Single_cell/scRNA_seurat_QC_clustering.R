@@ -20,7 +20,7 @@ for (j in 1:nrow(data)){
     ScaleData() %>%
     RunPCA(verbose = FALSE) %>%
     RunUMAP(dims = 1:30)
-  sweep.res.list <- paramSweep_v3(object, PCs = 1:30, sct = F)     #去双细胞
+  sweep.res.list <- paramSweep_v3(object, PCs = 1:30, sct = F)     
   sweep.stats <- summarizeSweep(sweep.res.list, GT = FALSE)
   bcmvn <- find.pK(sweep.stats)
   p <- as.numeric(as.vector(bcmvn[bcmvn$MeanBC==max(bcmvn$MeanBC),]$pK))
