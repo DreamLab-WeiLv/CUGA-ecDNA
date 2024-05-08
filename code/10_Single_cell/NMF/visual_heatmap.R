@@ -1,4 +1,3 @@
-setwd('D:/work/pan cancer_EC/EC/new0229/noAT/epi/NMF')
 cor <- read.table('./res2/cor_heatmap_data.txt',sep='\t',header = T,row.names = 1)
 
 annotation_col <- data.frame(ID=colnames(cor))
