@@ -47,7 +47,7 @@ saveRDS(seurat_data,'all.rds')
 
 pan_marker <- c("VWF", "PECAM1", "ENG","CDH5","DCN","ACTA2","COL1A1","COL1A2","CD68", "LYZ", "CD163", "CD14","CD79A", "CD79B", "MS4A1", "MZB1","CD2","CD3D","CD3E","NKG7","GZMA","EPCAM","KRT18","KRT7","KRT19")
 p1 <- DimPlot(seurat_data, reduction = "umap", group.by = "orig.ident",raster = T) + theme(legend.position="none")
-p2 <- DotPlot(seurat_data, features = marker,group.by = "RNA_snn_res.0.1")+
+p2 <- DotPlot(seurat_data, features = pan_marker,group.by = "RNA_snn_res.0.1")+
   theme(axis.text.x = element_text(angle = 90,vjust = 0.5, hjust=0.5))
 
 ############################################
